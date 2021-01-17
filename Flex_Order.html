@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <!-----Space around give space equal -->
+    <!------Space evenly means give space half between both side and equal between-->
+    <style>
+        .main{
+            display: flex;
+            border: 5px solid black;
+            justify-content:space-evenly;
+            align-items: center;
+            height: 400px;
+        }
+        #red{
+            width: 28%;
+            height: 250px;
+            background-color: red;
+            border: 3px solid black;
+            order: 2;
+           /* flex: 4;   */
+        }
+        #blue{
+            width: 28%;
+            height: 250px;
+            background-color:blue;
+            border: 3px solid black;
+            order: 3;
+          /* flex: 2;   */
+        }
+        #green{
+            width: 28%;
+            height: 250px;
+            background-color:green;
+            border: 3px solid black;
+            order: 1;
+           /* flex: 1;   */
+        }
+    </style>
+</head>
+<body>
+  <div class="main">
+      <div id="red" >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, labore? Possimus repellendus, optio neque deserunt in aut numquam est nostrum. Soluta doloribus est repudiandae explicabo itaque vero culpa nemo error, id quasi amet illo consectetur accusantium consequuntur officia recusandae ipsam ab rerum aperiam quos? Accusamus natus ut voluptatem ab fuga ad, consequuntur ducimus at placeat dolor nisi quis laborum alias, ullam quo impedit sapiente quae. Nemo laborum suscipit eveniet excepturi consequuntur ab reprehenderit corporis et maxime fuga. Quasi a soluta tenetur magnam, labore odit officiis veritatis. Odio exercitationem consequuntur, ab a labore sit, iusto beatae quo hic ratione accusamus necessitatibus. </div>
+      <div id="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore excepturi laudantium repellendus ad quos corporis facere dolor aliquid hic veniam nam saepe ab facilis, aliquam dicta, sit odio perspiciatis voluptatem. Quisquam doloremque et sapiente optio totam, repellendus vitae tempora, voluptatum, excepturi laudantium quas voluptatem! Non quidem iste deleniti minima consequatur nihil repellendus. Nemo aspernatur pariatur, ipsum fuga ducimus commodi doloremque numquam non deserunt quod, iusto delectus totam magnam ipsam? Voluptatum repellendus maxime dolores, a eveniet nihil ab magnam at eligendi ducimus quibusdam cum distinctio, fuga et. Expedita laboriosam esse eligendi ipsum hic reiciendis, placeat fugiat voluptatibus nemo voluptate maxime laborum.</div>
+      <div id="green">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In cum, incidunt dolor odio illo excepturi obcaecati optio delectus doloremque libero nobis laborum nesciunt corporis sapiente nulla quasi dolorum impedit quas dolore perspiciatis quis iure? Quisquam est nihil ipsam alias dolore ea, nam, officiis quibusdam eos repellat, accusantium iure at laudantium autem. Perspiciatis, minus amet earum laboriosam itaque nisi aliquid pariatur, eius quod quos cupiditate? Dolorum perspiciatis delectus modi iste voluptatem, est distinctio laborum repellat nisi nam incidunt vero quos accusamus sint, odio doloremque architecto aliquam eveniet non assumenda, eos libero inventore tenetur! Magnam obcaecati officiis, deserunt saepe quia tempore amet?</div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+  <!----feild set, to give border------------>
+  <!------abhishekbs.1103@gmail.com-->
+    <!------FORM tag is neccessary when you gonna upload the code-->
+  <!-----label tag is used with form only-->
+  <!------for not to got old value  AUTOCOMPLETE OFF/ to get old value AUTOCOMPLETE ON-->
+  <fieldset>
+    <legend>Registration Details</legend> 
+  <form autocomplete="off" method="POST">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" placeholder="First Name" required autofocus><br><br>
+<!-----------last name-->
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" placeholder="Last Name" required><br><br>
+
+      <label for="email" >Email</label>
+      <input type="email" id="email" value="jacksparrow@gmail.com"><br><br>
+
+      <label for="password">Password</label>
+      <input type="password" id="password"><br><br>
+
+      <label for="gender">Gender</label>
+      <input type="radio" id="gender" name="gender" >Male
+      
+      <input type="radio" id="gender" name="gender">Female
+
+      <input type="radio" id="gender" name="gender">Others
+      <br><br>
+      <label for="YOP" >Y.O.P</label>
+      <input type="number" id="YOP" name="Y.O.P" min="2012" max="2020">
+      <br><br>
+
+      <label for="Qualification">Qualification</label>
+      <select name="edu" id="Qualification">Qualification :
+      <option value="B.E">B.E</option>
+      <option value="B.Tech" >B.Tech</option>
+      <option value="M.E">M.E</option>
+      <option value="M.Tech">M.Tech</option>
+    </select>
+    <br><br>
+
+    <input list="institute">
+    <datalist id="institute">
+        <option value="qsp">Q-Spiders</option>
+        <option value="jsp">J-Spiders</option>
+        <option value="psp">P-Spiders</option>
+        <option value="rsp">R-Spiders</option>
+    </datalist>
+    <br><br>
+    <!--------Check Box-->
+<label for="sub">Subject</label><br>
+<input type="checkbox" name="sub" id="sub" checked >Java <br>
+<input type="checkbox" name="sub" id="sub">SQL <br>
+<input type="checkbox" name="sub" id="sub">Selenium <br>
+<input type="checkbox" name="sub" id="sub">Manual <br>
+<input type="checkbox" name="sub" id="sub">Angular <br>
+<input type="checkbox" name="sub" id="sub">React <br>
+<input type="checkbox" name="sub" id="sub">Web Technology <br>
+<br><br>
+
+<!-------comment/text area-->
+<label for="comment">Comment</label><br> <br>
+<textarea name="comment" id="comment" cols="40" rows="5" style="vertical-align: middle;">please give feedback</textarea>
+<br><br>
+
+<!------date and time-->
+<label for="date">Date and Time</label>
+<input type="date" id="date">
+<br><br>
+
+<label for="url">URL</label>
+<input type="url" name="url" id="url">
+<br>
+<br>
+<label for="search bar">Search: </label>
+<input type="search" id="search bar">
+<br><br>
+<label for="file">upload File</label>
+<input type="file" name="file" id="file" multiple>
+<br><br>
+
+<!-------pincode with max length-------->
+<label for="pin">Pincode: </label>
+<input type="text" name="pin" id="pin" maxlength="4">
+<br><br>
+<label for="readonly">Pass</label>
+<input type="number" name="readonly" id="readonly" value="2020" readonly>
+<br><br>
+<!------steps , like year of passout---------->
+<label for="quantity">Quantity</label>
+<input type="number" min="10"  id="quantity"  max="200" step="10">
+<br><br>
+
+      <input type="submit" onclick="alert('data sent to server')">
+    
+      <input type="reset" value="cancel">
+    <br><br>
+
+  </form>
+</fieldset> 
+</body>
+</html>
+<!-----PLACEHOLDER will give effect of username and pwd in background-->
+<!-----but here place holder doesn't make any sense as we already giving LABEL-->
+<!--------For Secure data we are using POST method-->
+<!-----gender for RADIO button------->

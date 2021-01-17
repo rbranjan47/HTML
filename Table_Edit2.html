@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Edit</title>
+    <style>
+        table, th, td
+        {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        table
+        {
+            width: 65%;
+            margin: auto;
+        }
+        th,td
+        {
+         padding: 10px;
+         border-bottom: 2px solid rgb(233, 213, 213);
+         
+         text-align: left;
+        }
+        tr:hover{
+            color: black;
+            background-color: rgb(114, 230, 195);
+            transition: 0.4s;
+        }
+        tr:nth-child(even)
+        {
+            background-color: blue;
+            color: white;
+        }
+      #table_row{
+          background-color: black;
+          color: white;
+      }
+    </style>
+</head>
+<body>
+    <table>
+        <tr id="table_row">
+            <th>Name</th><!---th tag for Bolder format-------->
+            <th>College</th>
+            <th>Place</th>
+        </tr>
+        <tr>
+            <td>Rabi</td>
+            <td>Tat</td>
+            <td>Bhubaneshwar</td>
+        </tr><!------tr tag for row------------>
+        <tr>
+            <td>Asutosh</td>
+            <td>NIST</td>
+            <td>Behrampur</td>
+        </tr>
+        <tr>
+            <td>Rabi</td>
+            <td>Tat</td>
+            <td>Bhubaneshwar</td>
+        </tr>
+        <tr>
+            <td>Rabi</td>
+            <td>Tat</td>
+            <td>Bhubaneshwar</td>
+        </tr>
+    </table>
+</body>
+</html>
